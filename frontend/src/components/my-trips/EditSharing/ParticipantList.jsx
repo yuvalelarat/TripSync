@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { FormControl, IconButton, InputLabel, MenuItem, Select } from '@mui/material';
-import PersonRemoveTwoToneIcon from '@mui/icons-material/PersonRemoveTwoTone';
+import PersonRemoveOutlinedIcon from '@mui/icons-material/PersonRemoveOutlined';
 import {
     useLazyGetParticipantsQuery,
     useRemoveParticipantMutation,
@@ -91,7 +91,7 @@ function ParticipantList({ tripId, onAlertTrigger }) {
                                 },
                             }}
                             onClick={() => removeParticipantHandler(tripId, participant.email)}>
-                            <PersonRemoveTwoToneIcon />
+                            <PersonRemoveOutlinedIcon />
                         </IconButton>
                     </div>
                 ))}

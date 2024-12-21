@@ -11,11 +11,10 @@ import {
     cardActionsStyle,
     circleContainerStyle,
 } from './styles.js';
-import Button from '@mui/material/Button';
 import { useState } from 'react';
 import NewActivityForm from '../NewActivityForm/NewActivityForm.jsx';
 import AddTwoToneIcon from '@mui/icons-material/AddTwoTone';
-import DeleteForeverTwoToneIcon from '@mui/icons-material/DeleteForeverTwoTone';
+import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
 
 // eslint-disable-next-line react/prop-types
 function BluredCard({ date, country }) {
@@ -50,7 +49,7 @@ function BluredCard({ date, country }) {
                 <CardActions style={cardActionsStyle}>
                     <div className={'activity-action-style'}>
                         <IconButton sx={{ color: 'var(--color-light-black)' }} disabled={true}>
-                            <DeleteForeverTwoToneIcon fontSize={'large'} />
+                            <DeleteOutlineOutlinedIcon fontSize={'medium'} />
                         </IconButton>
                     </div>
                 </CardActions>

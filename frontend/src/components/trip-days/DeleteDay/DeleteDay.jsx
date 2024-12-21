@@ -1,8 +1,7 @@
-import Button from '@mui/material/Button';
 import DeleteDialog from '../../common/DeleteDialog.jsx';
 import { useState } from 'react';
 import { IconButton } from '@mui/material';
-import DeleteForeverTwoToneIcon from '@mui/icons-material/DeleteForeverTwoTone';
+import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
 
 // eslint-disable-next-line react/prop-types
 function DeleteDay({ handleDelete }) {
@@ -28,7 +27,7 @@ function DeleteDay({ handleDelete }) {
                         color: 'red',
                     },
                 }}>
-                <DeleteForeverTwoToneIcon fontSize={'large'} />
+                <DeleteOutlineOutlinedIcon fontSize={'medium'} />
             </IconButton>
             <DeleteDialog
                 open={open}

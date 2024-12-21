@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { TextField, FormControl, InputLabel, Select, MenuItem, IconButton } from '@mui/material';
-import PersonAddAltTwoToneIcon from '@mui/icons-material/PersonAddAltTwoTone';
+import PersonAddAlt1OutlinedIcon from '@mui/icons-material/PersonAddAlt1Outlined';
 import { useAddParticipantMutation } from '../../../redux/rtk/participantsDataApi.js';
 import './ParticipantManagement.css';
 
@@ -66,7 +66,7 @@ function ParticipantManagement({ tripId, onAlertTrigger, refetchParticipants }) 
                     </Select>
                 </FormControl>
                 <IconButton onClick={addParticipantHandler} sx={{ color: 'black' }}>
-                    <PersonAddAltTwoToneIcon />
+                    <PersonAddAlt1OutlinedIcon />
                 </IconButton>
             </div>
         </>

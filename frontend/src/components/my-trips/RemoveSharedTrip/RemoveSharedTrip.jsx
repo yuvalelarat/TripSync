@@ -3,6 +3,8 @@ import DeleteDialog from '../../common/DeleteDialog.jsx';
 import { useState } from 'react';
 import { IconButton } from '@mui/material';
 import RemoveCircleTwoToneIcon from '@mui/icons-material/RemoveCircleTwoTone';
+import RemoveCircleOutlineOutlinedIcon from '@mui/icons-material/RemoveCircleOutlineOutlined';
+import RemoveOutlinedIcon from '@mui/icons-material/RemoveOutlined';
 // eslint-disable-next-line react/prop-types
 function RemoveSharedTrip({ handleDelete, tripId, email }) {
     const [open, setOpen] = useState(false);
@@ -32,7 +34,7 @@ function RemoveSharedTrip({ handleDelete, tripId, email }) {
                         color: 'red',
                     },
                 }}>
-                <RemoveCircleTwoToneIcon />
+                <RemoveOutlinedIcon />
             </IconButton>
             <DeleteDialog
                 open={open}

@@ -17,7 +17,7 @@ import Button from '@mui/material/Button';
 import { useState } from 'react';
 import NewDayForm from '../NewDayForm/NewDayForm.jsx';
 import AddTwoToneIcon from '@mui/icons-material/AddTwoTone';
-import DeleteForeverTwoToneIcon from '@mui/icons-material/DeleteForeverTwoTone';
+import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
 
 // eslint-disable-next-line react/prop-types
 function BluredCard({ startDate, endDate }) {
@@ -62,7 +62,7 @@ function BluredCard({ startDate, endDate }) {
                             Edit
                         </Button>
                         <IconButton sx={{ color: 'var(--color-light-black)' }} disabled={true}>
-                            <DeleteForeverTwoToneIcon fontSize={'large'} />
+                            <DeleteOutlineOutlinedIcon fontSize={'medium'} />
                         </IconButton>
                     </div>
                 </CardActions>
