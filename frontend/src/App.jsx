@@ -12,6 +12,7 @@ import UserRoutes from './private-routes/UserRoutes.jsx';
 import TripRoutes from './private-routes/TripRoutes.jsx';
 import JourneyRoutes from './private-routes/JourneyRoutes.jsx';
 import TripExpensesPage from './pages/TripExpensesPage/TripExpensesPage.jsx';
+import VerifyEmailPage from './pages/VerifyEmailPage.jsx';
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
                     <Route path="/" element={<MainPage />} />
                     <Route path="/login" element={<LoginPage />} />
                     <Route path="/register" element={<RegisterPage />} />
+                    <Route path="/verify-email" element={<VerifyEmailPage />} />
                     <Route element={<UserRoutes />}>
                         <Route path="/my-trips" element={<MyTripsPage />} />
                         <Route path="/new-trip" element={<NewTripPage />} />

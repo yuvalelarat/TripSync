@@ -15,10 +15,20 @@ export const userDataApi = createApi({
             query: (credentials) => ({
                 url: '/login',
                 method: 'POST',
-                body: credentials
-            })
-        })
-    })
+                body: credentials,
+            }),
+        }),
+        registerUser: builder.mutation({
+            query: (userData) => ({
+                url: '/register',
+                method: 'POST',
+                body: userData,
+            }),
+        }),
+        verifyEmail: builder.query({
+            query: (token) => `/verify-email?token=${token}`,
+        }),
+    }),
 });
 
-export const { useLoginUserMutation, useGetSharedTripsQuery } = userDataApi;
+export const { useLoginUserMutation, useRegisterUserMutation, useVerifyEmailQuery  } = userDataApi;
