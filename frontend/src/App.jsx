@@ -13,6 +13,7 @@ import TripRoutes from './private-routes/TripRoutes.jsx';
 import JourneyRoutes from './private-routes/JourneyRoutes.jsx';
 import TripExpensesPage from './pages/TripExpensesPage/TripExpensesPage.jsx';
 import VerifyEmailPage from './pages/VerifyEmailPage.jsx';
+import ResetPasswordPage from './pages/ResetPasswordPage.jsx';
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
                     <Route path="/login" element={<LoginPage />} />
                     <Route path="/register" element={<RegisterPage />} />
                     <Route path="/verify-email" element={<VerifyEmailPage />} />
+                    <Route path="/reset-password" element={<ResetPasswordPage />} />
                     <Route element={<UserRoutes />}>
                         <Route path="/my-trips" element={<MyTripsPage />} />
                         <Route path="/new-trip" element={<NewTripPage />} />
